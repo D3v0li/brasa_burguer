@@ -1,0 +1,55 @@
+:root {
+    --cor0: #101010;
+    --cor1: #1a1a1a;
+    --cor2: #d4af37;
+    --cor3: #ffffff;
+    --cor4: #bdbdbd;
+}
+
+/*configurações gerais*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*corpo do site*/
+body {
+    background-color: var(--cor0);
+    color: var(--cor3);
+    font-family: Arial, sans-serif;
+}
+
+/*cabeçalho*/
+header {
+    background-color: var(--cor1);
+    padding: 25px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+
+/*logotipo*/
+header h1 {
+    color: var(--cor2);
+    font-size: 28px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/*menu de navegacao*/
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+nav a {
+    color: var(--cor3);
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--cor2)
+}
