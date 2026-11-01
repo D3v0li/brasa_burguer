@@ -4,6 +4,7 @@
     --cor2: #d4af37;
     --cor3: #ffffff;
     --cor4: #bdbdbd;
+    --cor5: #f1a312;
 }
 
 /*configurações gerais*/
@@ -43,6 +44,7 @@ nav ul {
     list-style: none;
     gap: 30px;
 }
+
 nav a {
     color: var(--cor3);
     text-decoration: none;
@@ -104,6 +106,108 @@ nav a:hover {
 
 /*efeito do botao*/
 .botao-hero:hover{
-    background-color: var(--cor4);
+    background-color: var(--cor5);
     transform: translateY(-3px);
 }
+
+/*cardapio*/
+.cardapio {
+    padding: 80px 60px;
+    background-color: var(--cor1);
+}
+
+/*titulo do cardapio*/
+.titulo-cardapio {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titulo-cardapio span {
+    color: var(--cor2);
+    letter-spacing: 4px;
+    font-size: 13px;
+}
+
+.titulo-cardapio h2 {
+    font-size: 38px;
+    margin: 15px 0;
+}
+
+.titulo-cardapio p {
+    color: var(--cor4);
+    font-size: 16px;
+}
+
+/*organização dos itens do cardápio*/
+.container-produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*card-individual*/
+.produto {
+    background-color: var(--cor1);
+    border: 1px solid var(--cor2);
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+/*efeito do card*/
+.produto:hover {
+    transform: translateY(-8px);
+    border-color: var(--cor2);
+}
+
+/*fotografia*/
+.produto img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+/*informações do produto*/
+.produto-info {
+    padding: 25px;
+}
+
+.produto-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.produto-info p{
+    color: var(--cor4);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/*preço do produto*/
+.preco {
+    display: block;
+    color: var(--cor3);
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/*bota do produto*/
+.botao-produto {
+    display: inline-block;
+    background-color: var(--cor2);
+    color: var(--cor3);
+    padding: 12px 22px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao-produto:hover {
+    background-color: var(--cor5);
+    transform: translateY(-3px);
+}
+
+
