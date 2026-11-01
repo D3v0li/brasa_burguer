@@ -210,4 +210,61 @@ nav a:hover {
     transform: translateY(-3px);
 }
 
+/*responsividade tablets*/
+@media (max-width: 768px) {
+    .container-produtos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
 
+    .hero {
+        padding: 40px;
+    }
+
+    .hero-conteudo h2 {
+        font-size: 40px;
+    }
+}
+
+/*tablets menores*/
+@media (min-width: 481px) and (max-width: 600px) {
+    .container-produtos {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*responsividade para celulares*/
+@media (max-width: 480px) {
+    .header {
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 500px;
+        padding: 25px;
+    }
+
+    .hero-conteudo h2 {
+        font-size: 32px;
+    }
+
+    .hero-conteudo p {
+        font-size: 16px;
+    }
+
+    .cardapio {
+        padding: 50px 20px;
+    }
+
+    .container-produtos {
+        grid-template-columns: 1fr;
+    }
+}
