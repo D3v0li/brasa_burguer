@@ -7,6 +7,8 @@
     --cor5: #f1a312;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 /*configurações gerais*/
 * {
     margin: 0;
@@ -18,7 +20,7 @@
 body {
     background-color: var(--cor0);
     color: var(--cor3);
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*cabeçalho*/
@@ -48,7 +50,7 @@ nav ul {
 nav a {
     color: var(--cor3);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
     transition: 0.3s;
 }
 
@@ -286,7 +288,7 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-/*bota do produto*/
+/*botao do produto*/
 .botao-produto {
     display: inline-block;
     background-color: var(--cor2);
@@ -300,6 +302,119 @@ nav a:hover {
 .botao-produto:hover {
     background-color: var(--cor5);
     transform: translateY(-3px);
+}
+
+/*rodape*/
+.rodape {
+    background-color: var(--cor0);
+    padding: 60px 60px 20px;
+}
+
+.rodape-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*marca*/
+.rodape-marca h2 {
+    color: var(--cor2);
+    font-size: 25px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.rodape-marca p {
+    color: var(--cor4);
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+/*titulos*/
+.rodape-links h3, .rodape-social h3 {
+    color: var(--cor2);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/*links*/
+.rodape-links, .rodape-social{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;    
+}
+
+.rodape-links a, .rodape-social a {
+    color: var(--cor4);
+    transform: translateX(5px);
+    text-decoration: none;
+}
+
+.rodape-social a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.rodape-social i {
+    color: var(--cor2);
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+}
+
+.rodape-links a:hover, .rodape-social a:hover {
+    color: var(--cor2);
+    transform: translateX(0);
+}
+
+/*direitos autorais*/
+.rodape-final {
+    margin-top: 50px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.rodape-final p {
+    color: var(--cor4);
+    font-size: 18px;
+}
+
+.rodape ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+
+
+
+
+/*botao voltar inicio*/
+.voltar-topo {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--cor2);
+    color: var(--cor3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 50%;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    z-index: 999; 
+    transform: translateY(-5px);    
 }
 
 /*responsividade tablets*/
@@ -328,6 +443,15 @@ nav a:hover {
 
     .sobre-conteudo h2 {
         font-size: 30px;
+    }
+
+    .rodape{
+        padding: 50px 30px 20px;
+    }
+
+    .rodape-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
     }
 }
 
@@ -388,6 +512,22 @@ nav a:hover {
 
     .container-produtos {
         grid-template-columns: 1fr;
+    }
+
+    .rodape-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .rodape {
+        padding: 40px 20px 20px;
+    }
+
+    .voltar-topo {
+        width: 45px;
+        height: 45px;
+        right: 15px;
+        bottom: 15px;
     }
 }
 
