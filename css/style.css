@@ -26,18 +26,17 @@ body {
 /*cabeçalho*/
 header {
     background-color: var(--cor1);
-    padding: 25px 60px;
+    padding: 15px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center ;
 }
 
-/*logotipo*/
-header h1 {
-    color: var(--cor2);
-    font-size: 28px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
+/*imagem logo*/
+.logo img {
+    height: 200px;
+    width: auto;
+    display: block;
 }
 
 /*menu de navegacao*/
@@ -50,7 +49,7 @@ nav ul {
 nav a {
     color: var(--cor3);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     transition: 0.3s;
 }
 
@@ -82,7 +81,7 @@ nav a:hover {
 /*texto superior*/
 .hero-conteudo span{
     color: var(--cor2);
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 4px;
 }
 
@@ -149,7 +148,7 @@ nav a:hover {
 /*subtitulo sobre*/
 .subtitulo-sobre {
     color: var(--cor2);
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 4px;
     text-transform: uppercase;
 }
@@ -337,7 +336,7 @@ nav a:hover {
 /*titulos*/
 .rodape-links h3, .rodape-social h3 {
     color: var(--cor2);
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 20px;
 }
 
@@ -363,7 +362,7 @@ nav a:hover {
 
 .rodape-social i {
     color: var(--cor2);
-    font-size: 20px;
+    font-size: 16px;
     width: 20px;
     text-align: center;
 }
@@ -389,7 +388,7 @@ nav a:hover {
     list-style: none;
     padding: 0;
     margin: 0;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 
@@ -466,6 +465,10 @@ nav a:hover {
         padding: 20px;
         flex-direction: column;
         gap: 20px;
+    }
+
+    .logo img {
+        width: 90px;
     }
 
     .nav ul {
